@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html, body {
+    background-color: rgb(20, 20, 20);
+}
+
+.title h1 {
+    font-size: 1.8em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.title p {
+    font-size: 1.2em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.title p a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.title p a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+    width: 98%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-family: 'Inconsolata', monospace;
+}
+
+.content * h2 {
+    font-size: 1.0em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.content .about .logo {
+  width: 3.5em;
+  height: auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.content .about p {
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-bottom: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.content .profile table {
+    width: 100%;
+    color: #ccc;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.content .profile tbody {
+  border: solid 1px #aaa;
+	padding: 0.5em;
+}
+
+.content .profile tbody td {
+  border: solid 1px #aaa;
+	padding: 0.5em;
+}
+
+.content .profile table tbody tr td h1 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.content .profile table tbody tr td p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.5em;
+    user-select: none;
+}
+
+.spacer {
+  background-color: #eee;
+  height: 1px;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}

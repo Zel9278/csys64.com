@@ -1,6 +1,29 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
+
+function getAge(data) {
+  let splitData = data.split("/");
+  let birthday = new Date(splitData[0], splitData[1]-1, splitData[2]);
+  let today = new Date();
+  let thisYearBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
+  let age = today.getFullYear() - birthday.getFullYear();
+
+  return (today < thisYearBirthday) ? age-1 : age;
+}
+
+function Ptd(props) {
+  return <td>
+    <h1>{props.name}</h1>
+    <p>{props.value}</p>
+  </td>
+}
+
+function Lli(props) {
+  return <li>
+    <Link href={props.url}>{props.name}</Link>
+  </li>
+}
 
 export default function Home() {
   return (
@@ -27,7 +50,7 @@ export default function Home() {
 
       <div className="title">
         <h1>csys64 - clive&apos;s homepage</h1>
-        <p><a href="https://www.eox2.com" target="_blank" rel="noopener noreferrer">eoeo</a>~:3</p>
+        <p><Link href="https://www.eox2.com">eoeo</Link>~:3</p>
       </div>
       <div className="spacer" />
       <div className="content">
@@ -36,9 +59,9 @@ export default function Home() {
           <img
             src="/logo.svg"
             alt="a logo"
-            className='logo'
+            className="logo"
           />
-          <p>It's just a website.</p>
+          <p>It&apos;s just a website.</p>
         </div>
         <div className="spacer" />
         <div className="profile">
@@ -46,34 +69,25 @@ export default function Home() {
           <table>
             <tbody>
               <tr>
-                <td>
-                  <h1>Name</h1>
-                  <p>Clive</p>
-                </td>
-                <td>
-                  <h1>Age</h1>
-                  <p>{getBirthday("2003/04/25")}</p>
-                </td>
-                <td>
-                  <h1>Gender</h1>
-                  <p>Male</p>
-                </td>
-                <td>
-                  <h1>Location</h1>
-                  <p>Japan, Aichi</p>
-                </td>
-                <td>
-                  <h1>Interests</h1>
-                  <p>Development, MIDI, Music, Video</p>
-                </td>
+                <Ptd name="Name" value="Clive" />
+                <Ptd name="Age" value={getAge('2003/04/25')} />
+                <Ptd name="Gender" value="Male" />
+                <Ptd name="Location" value="Japan, Aichi" />
+                <Ptd name="Interests" value="Development, MIDI, Music, Video" />
               </tr>
             </tbody>
           </table>
         </div>
       </div>
       <div className="spacer" />
-      <div class="links">
-        
+      <div className="links">
+        <h2>Links</h2>
+        <ul>
+          <Lli name="qonq" url="https://qonq.csys64.com" />
+          <Lli name="github" url="https://github.com/csys64" />
+          <Lli name="twitter" url="https://twitter.com/csys64" />
+          <Lli name="youtube" url="https://www.youtube.com/channel/UCNPvr9FG_giLD4aFXgNipuQ" />
+        </ul>
       </div>
       <div className="spacer" />
       <div className="footer">
@@ -81,14 +95,4 @@ export default function Home() {
       </div>
     </div>
   )
-}
-
-function getBirthday(data) {
-  let splitData = data.split("/");
-  let birthday = new Date(splitData[0], splitData[1]-1, splitData[2]);
-  let today = new Date();
-  let thisYearBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
-  let age = today.getFullYear() - birthday.getFullYear();
-
-  return (today < thisYearBirthday) ? age-1 : age;
 }

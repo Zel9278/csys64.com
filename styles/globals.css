@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@200&family=Saira:wght@200&display=swap');
 
 * {
     padding: 0;
@@ -15,7 +15,7 @@ html, body {
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     user-select: none;
 }
 
@@ -46,7 +46,7 @@ html, body {
     justify-content: center;
     text-align: center;
     background-color: #222;
-    width: 98%;
+    width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +60,7 @@ html, body {
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.05em;
+    margin-bottom: 0.2em;
     font-family: 'Montserrat', sans-serif;
     user-select: none;
 }
@@ -98,13 +99,81 @@ html, body {
 }
 
 .content .profile table tbody tr td h1 {
-  color: #aaa;
+  color: #888;
   font-size: 14px;
+  font-family: 'Saira', sans-serif;
 }
 
 .content .profile table tbody tr td p {
   color: #fff;
   font-size: 18px;
+  font-family: 'Saira', sans-serif;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 98%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-family: 'Inconsolata', monospace;
+}
+
+.links h2 {
+    font-size: 1.0em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.05em;
+    margin-bottom: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+.links ul li {
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: 'Saira', sans-serif;
+}
+
+.links ul li:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
 }
 
 .footer {

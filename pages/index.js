@@ -83,7 +83,7 @@ export default function Home() {
       <div className="links">
         <h2>Links</h2>
         <ul>
-          <Lli name="qonq" url="https://qonq.csys64.com" />
+          <Lli name="files" url="https://files.csys64.com" />
           <Lli name="github" url="https://github.com/csys64" />
           <Lli name="twitter" url="https://twitter.com/csys64" />
           <Lli name="youtube" url="https://www.youtube.com/channel/UCNPvr9FG_giLD4aFXgNipuQ" />

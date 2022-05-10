@@ -1,26 +1,8 @@
 import Head from "next/head"
 import Link from "next/link"
-import { useRouter } from "next/router"
 import styles from "../styles/Home.module.css"
 
-function changeLanguageStr(texts) {
-    const { locale } = useRouter()
-
-    switch (locale) {
-        case "ja-JP":
-            if (
-                texts.sus_ja &&
-                `${new Date().getMonth() + 1}/${new Date().getDate()}` === "4/1"
-            )
-                return texts.sus_ja
-            return texts.ja
-
-        default:
-            return texts.en
-    }
-}
-
-function getAge(data) {
+function GetAge(data) {
     let splitData = data.split("/")
     let birthday = new Date(splitData[0], splitData[1] - 1, splitData[2])
     let today = new Date()
@@ -89,11 +71,9 @@ export default function Home() {
                     <h2>About</h2>
                     <img src="/logo.svg" alt="a logo" className="logo" />
                     <p>
-                        {changeLanguageStr({
-                            ja: "cedです、色々な趣味を持っている、できることが少ない。",
-                            sus_ja: "cedてず、色々な趣味を持っていゑ、てきゑことが少ない。",
-                            en: "I am ced, I have many hobbies, but there is not much I can do.",
-                        })}
+                        色々な趣味を持っている、できることが少ない。
+                        <br />I have many hobbies, but there is not much I can
+                        do.
                     </p>
                 </div>
                 <div className="spacer" />
@@ -102,8 +82,8 @@ export default function Home() {
                     <table>
                         <tbody>
                             <tr>
-                                <Ptd name="Name" value="Clive" />
-                                <Ptd name="Age" value={getAge("2003/04/25")} />
+                                <Ptd name="Name" value="Clive(Ced)" />
+                                <Ptd name="Age" value={GetAge("2003/04/25")} />
                                 <Ptd name="Gender" value="Male" />
                                 <Ptd name="Location" value="Japan, Aichi" />
                                 <Ptd

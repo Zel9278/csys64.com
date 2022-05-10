@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@200&family=Saira:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@200&family=Saira:wght@200&display=swap");
 
 * {
     padding: 0;
@@ -6,7 +6,8 @@
     list-style: none;
 }
 
-html, body {
+html,
+body {
     background-color: rgb(20, 20, 20);
 }
 
@@ -15,7 +16,7 @@ html, body {
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.2em;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     user-select: none;
 }
 
@@ -24,14 +25,14 @@ html, body {
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.05em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
 .title p a {
     color: rgb(200, 200, 200);
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
@@ -50,33 +51,32 @@ html, body {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.4em;
     padding-bottom: 0.4em;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
 }
 
 .content * h2 {
-    font-size: 1.0em;
+    font-size: 1em;
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.05em;
     margin-bottom: 0.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
 .content .about .logo {
-  width: 3.5em;
-  height: auto;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+    width: 3.5em;
+    height: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 .content .about p {
     color: rgb(200, 200, 200);
     text-align: center;
     margin-bottom: 0.05em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
@@ -84,30 +84,30 @@ html, body {
     width: 100%;
     color: #ccc;
     border-collapse: collapse;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
 .content .profile tbody {
-  border: solid 1px #aaa;
-	padding: 0.5em;
+    border: solid 1px #aaa;
+    padding: 0.5em;
 }
 
 .content .profile tbody td {
-  border: solid 1px #aaa;
-	padding: 0.5em;
+    border: solid 1px #aaa;
+    padding: 0.5em;
 }
 
 .content .profile table tbody tr td h1 {
-  color: #888;
-  font-size: 14px;
-  font-family: 'Saira', sans-serif;
+    color: #888;
+    font-size: 14px;
+    font-family: "Saira", sans-serif;
 }
 
 .content .profile table tbody tr td p {
-  color: #fff;
-  font-size: 18px;
-  font-family: 'Saira', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Saira", sans-serif;
 }
 
 .links {
@@ -122,22 +122,23 @@ html, body {
     margin-right: auto;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
 }
 
 .links h2 {
-    font-size: 1.0em;
+    font-size: 1em;
     color: rgb(200, 200, 200);
     text-align: center;
     margin-top: 0.05em;
     margin-bottom: 0.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     user-select: none;
 }
 
 .links ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -145,7 +146,7 @@ html, body {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
 }
 
 .links ul li {
@@ -162,7 +163,7 @@ html, body {
     padding-bottom: 4px;
     margin-left: 2px;
     margin-right: 2px;
-    font-family: 'Saira', sans-serif;
+    font-family: "Saira", sans-serif;
 }
 
 .links ul li:hover {
@@ -170,14 +171,14 @@ html, body {
 }
 
 .links ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  user-select: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
 }
 
 .footer {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.8em;
     color: rgb(200, 200, 200);
     text-align: center;
@@ -186,9 +187,9 @@ html, body {
 }
 
 .spacer {
-  background-color: #eee;
-  height: 1px;
-  width: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+    background-color: #eee;
+    height: 1px;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }

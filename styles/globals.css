@@ -110,6 +110,83 @@ body {
     font-family: "Saira", sans-serif;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 98%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-family: "Inconsolata", monospace;
+}
+
+.skills h2 {
+    font-size: 1em;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    margin-top: 0.05em;
+    margin-bottom: 0.2em;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inconsolata", monospace;
+}
+
+.skills ul li {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: "Saira", sans-serif;
+}
+
+.skills ul li#nodejs {
+    background-color: rgb(0, 136, 41);
+}
+
+.skills ul li#ts {
+    background-color: rgb(8, 0, 122);
+}
+
+.skills ul li#cpp {
+    background-color: rgb(0, 74, 104);
+}
+
+.skills ul li#cs {
+    background-color: rgb(40, 0, 104);
+}
+
+.skills ul li#java {
+    background-color: rgb(104, 0, 0);
+}
+
 .links {
     display: flex;
     flex-direction: column;

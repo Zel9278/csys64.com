@@ -96,23 +96,29 @@ export default function Home() {
                 </div>
             </div>
             <div className="spacer" />
+            <div className="skills">
+                <h2>Programming Skills</h2>
+                <ul>
+                    <li id="nodejs">JavaScript(Node.js)</li>
+                    <li id="ts">TypeScript</li>
+                    <li id="cpp">C++</li>
+                    <li id="cs">C#</li>
+                    <li id="java">Java</li>
+                    <li id="ss">ShellScript</li>
+                </ul>
+            </div>
+            <div className="spacer" />
             <div className="links">
                 <h2>Links</h2>
                 <ul>
-                    <Lli name="files(csys64)" url="https://files.csys64.com" />
+                    <Lli name="files" url="https://files.csys64.com" />
                     <Lli name="mpp" url="https://beta-mpp.csys64.com" />
-                    <Lli name="files(eox2)" url="https://files.eox2.com" />
-                    <Lli name="ced" url="https://ced.eox2.com" />
-                    <Lli name="codes" url="https://codes.eox2.com" />
-                    <Lli name="japanese" url="https://日本語.eox2.com" />
-                    <Lli name="cvm builds" url="https://cvm-builds.eox2.com" />
-                    <Lli name="kuso" url="https://kusoda.net" />
                 </ul>
             </div>
             <div className="links">
                 <h2>Other Links</h2>
                 <ul>
-                    <Lli name="discord" url="https://d.eox2.com" />
+                    <Lli name="discord" url="https://discord.gg/m5X4u2qWgZ" />
                     <Lli name="gh(ced)" url="https://github.com/Zel9278" />
                     <Lli name="twi(ced)" url="https://twitter.com/fuji_ced" />
                     <Lli

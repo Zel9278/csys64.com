@@ -113,18 +113,15 @@ export default function Home() {
                 <ul>
                     <Lli name="files" url="https://files.csys64.com" />
                     <Lli name="mpp" url="https://beta-mpp.csys64.com" />
+                    <Lli name="kuso" url="https://kusoda.net" />
                 </ul>
             </div>
             <div className="links">
                 <h2>Other Links</h2>
                 <ul>
-                    <Lli name="discord" url="https://discord.gg/m5X4u2qWgZ" />
+                    <Lli name="discord" url="https://d.eox2.com" />
                     <Lli name="gh(ced)" url="https://github.com/Zel9278" />
                     <Lli name="twi(ced)" url="https://twitter.com/fuji_ced" />
-                    <Lli
-                        name="yt(clive)"
-                        url="https://www.youtube.com/channel/UCNPvr9FG_giLD4aFXgNipuQ"
-                    />
                     <Lli
                         name="yt(ced)"
                         url="https://www.youtube.com/channel/UCsj-vSMzC6wru-8PQ8XXPhw"

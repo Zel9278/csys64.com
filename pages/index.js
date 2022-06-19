@@ -28,7 +28,11 @@ function Ptd(props) {
 function Lli(props) {
     return (
         <li>
-            <Link href={props.url}>{props.name}</Link>
+            <Link href={props.url} passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                    {props.name}
+                </a>
+            </Link>
         </li>
     )
 }
@@ -62,7 +66,12 @@ export default function Home() {
             <div className="title">
                 <h1>csys64 homepage</h1>
                 <p>
-                    <Link href="https://eox2.com">eoeo</Link>~:3
+                    <Link href="https://eox2.com" passHref>
+                        <a target="_blank" rel="noopener noreferrer">
+                            eoeo
+                        </a>
+                    </Link>
+                    ~:3
                 </p>
             </div>
             <div className="spacer" />
